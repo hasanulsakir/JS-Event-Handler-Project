@@ -36,21 +36,21 @@ function totalPrice() {
 
     document.getElementById('totalPrice').innerText = totalAmount;
     document.getElementById('total').innerText = totalAmount;
-
+    return totalAmount;
 }
 
 
 // coupon Apply 
 function applyCoupon() {
-    const totalProductPrice = getTotalInput('total'); //input Total Price
+    const totalProductPrice = totalPrice(); //input Total Price
     const couponInputs = document.getElementById('couponInput').value; //input coupon code
 
     if (couponInputs == 'stevekaku') {
         const discount = totalProductPrice / 20; //discount 20%
         const totalPrice = totalProductPrice - discount; //get Total after Discout
         document.getElementById('total').innerText = totalPrice; //set Total Value
-        document.getElementById('couponInput').value = "";
-        document.getElementById('couponInput').disabled = true; //input field for one time
+        document.getElementById('couponInput').value = ""; //empty coupon input
+
 
         // Message 
         document.getElementById('notifySuccess').style.display = 'block';
