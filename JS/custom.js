@@ -46,7 +46,8 @@ function applyCoupon() {
     const couponInputs = document.getElementById('couponInput').value; //input coupon code
 
     if (couponInputs == 'stevekaku') {
-        const discount = totalProductPrice / 20; //discount 20%
+        const discountRate = 20 / 100;
+        const discount = totalProductPrice * discountRate; //discount 20%
         const totalPrice = totalProductPrice - discount; //get Total after Discout
         document.getElementById('total').innerText = totalPrice; //set Total Value
         document.getElementById('couponInput').value = ""; //empty coupon input
