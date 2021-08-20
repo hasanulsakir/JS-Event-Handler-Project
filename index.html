@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Tailwind CSS -->
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Mac Book Pro</title>
+</head>
+
+<body>
+    <main>
+
+        <section class="w-4/5 mx-auto mt-16 flex gap-16 mb-16">
+            <!-- left Image Section  -->
+            <div>
+                <img src="images/mac.png" alt="mac Image">
+            </div>
+
+
+
+            <!-- right contetn section  -->
+            <div>
+                <h1 class="text-5xl text-left">Customize Your Blue 24-inch iMac with Apple M1 chip.</h1>
+                <p class="text-xl mt-16 ml-2 text-left">Apple M1 chip with 8-core CPU with 4 performance cores and 4 efficiency cores, 7-core GPU, and 16-core Neural Engine 8GB unified memory 256GB SSD storage Two Thunderbolt / USB 4 ports Magic Mouse Magic Keyboard - US English</p>
+
+
+                <!-- memory  -->
+
+                <div class="mt-16 ml-3">
+                    <h3 class="text-lg font-semibold">Memory</h3>
+                    <button id="memory8Gb" class="py-2 px-16 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">8GB
+                        Unified
+                        memory</button>
+                    <button id="memory16Gb" class="py-2 px-16 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">16GB
+                        Unified
+                        memory</button>
+
+                </div>
+                <!-- Storage  -->
+
+                <div class="mt-16 ml-3">
+                    <h3 class="text-lg font-semibold">Storage</h3>
+                    <button id="storage256gb" class="py-2 px-8 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">256GB
+                        SSD Storage</button>
+                    <button id="storage512gb" class="py-2 px-8 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">512GB
+                        SSD Storage</button>
+                    <button id="storage1tb" class="py-2 px-8 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">1TB
+                        SSD Storage</button>
+
+                </div>
+                <!-- Choose Your Delivery Option  -->
+
+                <div class="mt-16 ml-3">
+                    <h3 class="text-lg font-semibold">Choose Your Delivery Option</h3>
+                    <button id="freeDelivery" class="py-2 px-8 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">Friday
+                        AUG 25, Free Prime Delivery</button>
+                    <button id="deliveryCostApplied" class="py-2 px-8 bg-gray-600 text-black shadow rounded duration-75 mt-2 hover:bg-black text-white">Friday,
+                        AUG 21, Delivery Charge 20$</button>
+
+
+                </div>
+                <!-- Pricing Calculation  -->
+                <div class="flex ml-3 font-bold text-xl gap-16 mt-16">
+
+                    <div class="mr-16">
+                        <h5>Best Price </h5>
+                        <h5>Extra Memory Cost</h5>
+                        <h5>Extra Storage Cost</h5>
+                        <h5>Delivery Charge</h5>
+                        <h5 class="mt-5">Total Price</h5>
+                    </div>
+
+                    <div class="ml-16">
+                        <h5>$ <span id="bestPrice">1299</span> </h5>
+                        <h5>$ <span id="memoryCost">00</span></h5>
+                        <h5>$ <span id="storageCost">00</span></h5>
+                        <h5>$ <span id="deliveryCharge">00</span></h5>
+                        <h5 class="mt-5">$ <span id="totalPrice">1299</span></h5>
+                    </div>
+                </div>
+
+                <!-- Coupon Calculation  -->
+                <div class="ml-3 mt-6">
+                    <h3 class="text-lg font-semibold">Add Promo Code</h3>
+                    <input type="text" class="px-6 py-2  rounded shadow- bg-gray-200 outline-none" name="" id="couponInput">
+                    <button type="submit" id="applyCoupon" class="bg-red-400 text-white py-2 px-8 duration-75 rounded hover:bg-red-600">Apply
+                        Coupon</button>
+                    <p id="notify" class="text-red-800 font-bold text-xl" style="display: none;">Your Coupon Empty Or Invalid !
+                    </p>
+                    <p id="notifySuccess" class="text-green-800 font-bold text-xl" style="display: none;"> Coupon Applied!
+                    </p>
+                </div>
+            </div>
+            </div>
+        </section>
+
+        <hr>
+
+
+        <!-- total Amount  -->
+        <div class="flex ml-3 font-bold text-3xl justify-center mb-16 gap-5">
+
+            <h5 class="mt-5">Total Price: </h5>
+            <h5 class="mt-5">$<span id="total">1299</span></h5>
+        </div>
+    </main>
+
+
+    <!-- script sheet  -->
+    <script src="custom.js"></script>
+</body>
+
+</html>
