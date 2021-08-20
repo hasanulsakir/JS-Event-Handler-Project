@@ -45,7 +45,7 @@ function applyCoupon() {
     const totalProductPrice = totalPrice(); //input Total Price
     const couponInputs = document.getElementById('couponInput').value; //input coupon code
 
-    if (couponInputs == 'stevekaku') {
+    if (couponInputs.toLowerCase() == 'stevekaku') {
         const discountRate = 20 / 100;
         const discount = totalProductPrice * discountRate; //discount 20%
         const totalPrice = totalProductPrice - discount; //get Total after Discout
