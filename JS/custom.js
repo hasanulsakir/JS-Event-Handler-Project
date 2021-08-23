@@ -56,7 +56,7 @@ function applyCoupon() {
         // Message 
         document.getElementById('notifySuccess').style.display = 'block';
         document.getElementById('notify').style.display = 'none';
-    } else if (couponInputs == '') {
+    } else {
 
         // Message 
         document.getElementById('notify').style.display = 'block';
